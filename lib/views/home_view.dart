@@ -19,8 +19,9 @@ class _HomeViewState extends State<HomeView> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Weather App",
-          style: TextStyle(color: Colors.black),
+          "SkyPulse",
+          style: TextStyle(
+              color: Colors.black, fontFamily: "bebasNeue", fontSize: 26),
         ),
         actions: [
           IconButton(

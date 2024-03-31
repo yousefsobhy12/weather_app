@@ -16,11 +16,13 @@ class NoWeatherBody extends StatelessWidget {
             children: [
               Text(
                 'There is no weather 😔',
-                style: TextStyle(fontSize: 30, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 35, color: Colors.black, fontFamily: "bebasNeue"),
               ),
               Text(
                 'Start searching now 🔍',
-                style: TextStyle(fontSize: 30, color: Colors.black),
+                style: TextStyle(
+                    fontSize: 35, color: Colors.black, fontFamily: "bebasNeue"),
               )
             ],
           ),

@@ -29,16 +29,16 @@ class WeatherInfoBody extends StatelessWidget {
             Text(
               weatherModel.cityName,
               style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 32,
-              ),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40,
+                  fontFamily: "bebasNeue"),
             ),
             Text(
               'Updated time: ${weatherModel.updatedDate.hour}:${weatherModel.updatedDate.minute}',
               style: const TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-              ),
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  fontFamily: "bebasNeue"),
             ),
             const SizedBox(
               height: 32,
@@ -49,11 +49,14 @@ class WeatherInfoBody extends StatelessWidget {
                 Image.network(
                   'https:${weatherModel.image!}',
                 ),
-                Text(
-                  weatherModel.avgTemp.toInt().toString(),
-                  style: const TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 32,
+                Padding(
+                  padding: const EdgeInsets.only(left: 20),
+                  child: Text(
+                    weatherModel.avgTemp.toInt().toString(),
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 40,
+                        fontFamily: "bebasNeue"),
                   ),
                 ),
                 Column(
@@ -61,14 +64,12 @@ class WeatherInfoBody extends StatelessWidget {
                     Text(
                       'Maxtemp: ${weatherModel.maxTemp.toInt().toString()}',
                       style: const TextStyle(
-                        fontSize: 16,
-                      ),
+                          fontSize: 20, fontFamily: "bebasNeue"),
                     ),
                     Text(
                       'Mintemp: ${weatherModel.minTemp.toInt().toString()}',
                       style: const TextStyle(
-                        fontSize: 16,
-                      ),
+                          fontSize: 20, fontFamily: "bebasNeue"),
                     ),
                   ],
                 ),
@@ -80,9 +81,9 @@ class WeatherInfoBody extends StatelessWidget {
             Text(
               weatherModel.weatherCondition,
               style: const TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 32,
-              ),
+                  fontWeight: FontWeight.bold,
+                  fontSize: 32,
+                  fontFamily: "bebasNeue"),
             ),
           ],
         ),
